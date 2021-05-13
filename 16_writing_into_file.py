@@ -1,11 +1,7 @@
-employee_file = open("./assets/employees.txt", "r")
+# employee_file = open("./assets/employees.txt", "a")  # amend
+employee_file = open("./assets/employees1.txt", "w")  # overwrite / create file
 
-for employee in employee_file.readlines():
-    print(employee)
-# print(employee_file.readable())
-# print(employee_file.read())
-# print(employee_file.readline())
-# print(employee_file.readlines()) #return array
+employee_file.write("\nKelly - CS")
 
 employee_file.close()
 
